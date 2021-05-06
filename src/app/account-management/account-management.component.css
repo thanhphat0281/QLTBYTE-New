@@ -1,0 +1,55 @@
+.main-search {
+    display: flex;
+    justify-content : flex-end;
+    margin-top: 80px;
+    
+}
+.input-group {
+    width: 400px;
+}
+.btn-add-storage button {
+    margin-left: 20px ;
+    padding: 5px 10px;
+    background: #333333;
+    color: aliceblue;
+}
+.txt-aline {
+    text-align: center;
+}
+
+.table-bordered {
+    margin-top: 50px;
+}
+
+.modal-title {
+    width: 500px;
+    text-align: center;
+}
+.modal-body {
+    /* width: 500px; */
+    display: flex;
+    justify-content: space-around;
+}
+.input-storage {
+    width: 300px;
+}
+.modal-footer {
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+button {
+    border: none;
+    padding: 5px 20px;
+    
+}
+.bg-color {
+    background: #636e72 !important;
+    color: aliceblue;
+}
+.cur-point {
+    cursor: pointer;
+}
+span:hover {
+    background: #b2bec3;
+}

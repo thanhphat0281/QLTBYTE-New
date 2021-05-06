@@ -1,0 +1,186 @@
+<div class="main-search">
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <span class="input-group-text cur-point" id="basic-addon2"><i class="fas fa-search"></i></span>
+        </div>
+      </div>
+  </div>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Thêm sửa chữa
+  </button>
+
+  <!-- modal -->
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5  class="modal-title" id="exampleModalLabel">Thêm sữa chữa/Bảo hảnh</h5>
+          <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button> -->
+        </div>
+        <div class="modal-body">
+          <span>Tên thiết bị</span>
+          <input class="input-repair" type="text">
+        </div>
+        <div class="modal-body">
+          <span>Model</span>
+          <input class="input-repair" type="text">
+        </div>
+        <div class="modal-body">
+          <span>Số Seri</span>
+          <input class="input-repair" type="text">
+        </div>
+        <div class="modal-body">
+          <span>Kho</span>
+          <input class="input-repair" type="text">
+        </div>
+        <div class="modal-body">
+          <span>Nơi sửa chữa</span>
+          <input class="input-repair" type="text">
+        </div>
+        <div class="modal-body">
+          <span>Ngày sữa chữa</span>
+          <input class="input-repair" type="date">
+        </div>
+        <div class="modal-body">
+          <span>Phí sữa chữa</span>
+          <input class="input-repair" type="text">
+        </div>
+        <div class="modal-body">
+          <span>Loại sửa chữa</span>
+          <!-- <input class="input-repair" type="text"> -->
+          <ejs-dropdownlist id='ddlelement' class="input-repair" [dataSource]='data' placeholder='Chọn loại sữa chữa' popupHeight='200px' popupWidth='250px' ></ejs-dropdownlist>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+          <button class="bg-color bt-repair ">Thêm</button>
+          <button class="bg-color bt-repair" type="button"  data-dismiss="modal" aria-label="Close">
+            <!-- <span aria-hidden="true">&times;</span> -->
+            Hủy
+          </button>
+          <!-- <button>Hủy</button> -->
+          <button class="bg-color bt-repair">Xóa thông tin</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <table class="table table-bordered">
+    <thead>
+      <tr class="txt-aline">
+        <th scope="col">ID</th>
+        <th class="txt-aline" scope="col">Tên thiết bị</th>
+        <th class="txt-aline" scope="col">Model</th>
+        <th class="txt-aline" scope="col">Số seri</th>
+        <th class="txt-aline" scope="col">Cửa hàng</th>
+        <th class="txt-aline" scope="col">Kho</th>
+        <th class="txt-aline" scope="col">Công ty cung cấp</th>
+        <th class="txt-aline" scope="col">Loại sữa chữa</th>
+        <th class="txt-aline" scope="col">Phí sữa chữa</th>
+        <th scope="col">
+          <i class="fas fa-ellipsis-v "></i>
+          
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="txt-aline">
+        <th scope="row">1</th>
+        <td>Máy siêu âm</td>
+        <td>SAO14</td>
+        <td>22323</td>
+        <td>Cửa hàng A</td>
+        <td>Kho A</td>
+        <td>Cty BAC</td>
+        <td>Thay linh kiện</td>
+        <td>3.000.000</td>
+        <td class="cur-point" data-toggle="modal" data-target="#exampleModal2"><i class="fas fa-pen"></i></td>
+       
+        
+      </tr>
+      <tr class="txt-aline">
+        <th scope="row">2</th>
+        <td>Máy chụp X-quang</td>
+        <td>ABC</td>
+        <td>44545</td>
+        <td>Cửa hàng D</td>
+        <td>Kho B</td>
+        <td>Cty A</td>
+        <td>Bảo hành</td>
+        <td>5.000.0000</td>
+        <td class="cur-point" data-toggle="modal" data-target="#exampleModal2"><i class="fas fa-pen"></i></td>
+       
+      </tr>
+      <tr class="txt-aline">
+        <th scope="row">3</th>
+        <td>Máy siêu âm</td>
+        <td>SAO14</td>
+        <td>22323</td>
+        <td>Cửa hàng A</td>
+        <td>Kho A</td>
+        <td>Cty BAC</td>
+        <td>Thay linh kiện</td>
+        <td>3.000.000</td>
+        <td class="cur-point" data-toggle="modal" data-target="#exampleModal2"><i class="fas fa-pen"></i></td>
+      </tr>
+
+      <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5  class="modal-title" id="exampleModalLabel">Thay đổi thông tin</h5>
+              <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button> -->
+            </div>
+            <div class="modal-body">
+              <span>Tên thiết bị</span>
+              <input class="input-repair" type="text">
+            </div>
+            <div class="modal-body">
+              <span>Model</span>
+              <input class="input-repair" type="text">
+            </div>
+            <div class="modal-body">
+              <span>Số seri</span>
+              <input class="input-repair" type="text">
+            </div>
+            <div class="modal-body">
+              <span>Kho</span>
+              <input class="input-repair" type="text">
+            </div>
+            <div class="modal-body">
+              <span>Nơi sữa chữa</span>
+              <input class="input-repair" type="text">
+            </div>
+            <div class="modal-body">
+              <span>Ngày sữa chữa</span>
+              <input class="input-repair" type="date">
+            </div>
+            <div class="modal-body">
+              <span>Loại sữa chữa</span>
+              <ejs-dropdownlist id='ddlelement' class="input-repair" [dataSource]='data' placeholder='Chọn loại sữa chữa' popupHeight='200px' popupWidth='250px' ></ejs-dropdownlist>
+            </div>
+            <div class="modal-body">
+              <span>Phí sữa chữa</span>
+              <input class="input-repair" type="text">
+            </div>
+            <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+              <button class="bg-color bt-repair">Cập nhật</button>
+              <button class="bg-color bt-repair" type="button"  data-dismiss="modal" aria-label="Close">
+                <!-- <span aria-hidden="true">&times;</span> -->
+                Hủy
+              </button>
+              <!-- <button>Hủy</button> -->
+              <button class="bg-color bt-repair" data-toggle="modal" data-target="#exampleModal3">Xóa thông tin</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </tbody>
+  </table>

@@ -1,0 +1,124 @@
+<div class="main-search">
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <span class="input-group-text cur-point" id="basic-addon2"><i class="fas fa-search"></i></span>
+        </div>
+      </div>
+  </div>
+  <!-- <div class="btn-add-storage">
+      <button>Tạo mới kho</button>
+  </div> -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Tạo mới kho
+  </button>
+
+
+  <!-- modal thêm kho -->
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5  class="modal-title" id="exampleModalLabel">Thêm kho</h5>
+          <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button> -->
+        </div>
+        <div class="modal-body">
+          <span>Tên kho</span>
+          <input class="input-storage" type="text">
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+          <button class="bg-color">Thêm</button>
+          <button class="bg-color" type="button"  data-dismiss="modal" aria-label="Close">
+            <!-- <span aria-hidden="true">&times;</span> -->
+            Hủy
+          </button>
+          <!-- <button>Hủy</button> -->
+          <button class="bg-color">Xóa thông tin</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <table class="table table-bordered">
+    <thead>
+      <tr class="txt-aline">
+        <th scope="col">ID</th>
+        <th class="txt-aline" scope="col">Tên kho</th>
+        <th scope="col"><i class="fas fa-ellipsis-v"></i></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="txt-aline">
+        <th scope="row">1</th>
+        <td>Kho A</td>
+        <td class="cur-point" data-toggle="modal" data-target="#exampleModal2"><i class="fas fa-pen"></i></td>
+       
+        
+      </tr>
+      <tr class="txt-aline">
+        <th scope="row">2</th>
+        <td>Kho B</td>
+        <td class="cur-point" data-toggle="modal" data-target="#exampleModal2"><i class="fas fa-pen"></i></td>
+       
+      </tr>
+      <tr class="txt-aline">
+        <th scope="row">3</th>
+        <td >Kho C</td>
+        <td class="cur-point" data-toggle="modal" data-target="#exampleModal2"><i class="fas fa-pen"></i></td>
+      </tr>
+
+      <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5  class="modal-title" id="exampleModalLabel">Thay đổi</h5>
+              <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button> -->
+            </div>
+            <div class="modal-body">
+              <span>Tên kho</span>
+              <input class="input-storage" type="text">
+            </div>
+            <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+              <button class="bg-color">Cập nhật</button>
+              <button class="bg-color" type="button"  data-dismiss="modal" aria-label="Close">
+                <!-- <span aria-hidden="true">&times;</span> -->
+                Hủy
+              </button>
+              <!-- <button>Hủy</button> -->
+              <button class="bg-color" data-toggle="modal" data-target="#exampleModal3">Xóa thông tin</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5  class="modal-title" id="exampleModalLabel">Xác nhận xóa kho</h5>
+              
+            </div>
+            <div class="modal-footer">
+            
+              <button class="bg-color">Xóa</button>
+              <button class="bg-color" type="button"  data-dismiss="modal" aria-label="Close">
+              
+                Hủy
+              </button>
+             
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </tbody>
+  </table>
